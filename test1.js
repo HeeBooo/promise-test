@@ -1,4 +1,4 @@
-// 以下四种Promise的区别是什么
+// 以下四种Promise的区别是什么，假设是doSomeThing和doSomeThingElse都是一个Promise实例
 doSomeThing().then(function () {
     return doSomeThingElse();
 }).then(finaHandler);
@@ -18,5 +18,3 @@ doSomeThing()
     .then(doSomeThingElse)
     .then(finaHandler);
 // 先执行doSomeThing,然后执行doSomeThingElse(resultOfdoSomeThing)，最后执行finaHandler(resultOfdoSomeThingElse)
-
-// 假设是doSomeThing和doSomeThingElse都是一个Promise实例
