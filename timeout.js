@@ -1,5 +1,5 @@
 console.log('test begin');
-new Promise ( resolve => {
+new Promise(resolve => {
     setTimeout(() => {
         resolve('hello');
     }, 2000)
